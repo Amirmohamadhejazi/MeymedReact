@@ -1,0 +1,94 @@
+.sec1{
+  .content_box_sec1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .item_box{
+    color: #000000;
+    position: relative;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 30px -15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+
+  /*1*/
+  .img_detail_selected {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #E1ECF4 0%, rgba(244, 250, 255, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*2*/
+  .options_box_select{
+    cursor: pointer;
+    font-size: 12px;
+    //width: 95px;
+    //height: 95px;
+    background: #FFFFFF;
+    color: #A5A5A5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 100px;
+  }
+  .options_box_selected{
+    background: #ebebeb;
+    color: #4A95E3;
+  }
+
+  .boxes_under_options{
+    width: 30%;
+    height: 60px;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  .boxes_under_options input{
+    height: 100%;
+    font-size: 14px;
+  }
+
+  .boxes_under_options button{
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+
+  }
+
+  .bg_yellow{
+    background: #F7C737;
+
+  }
+  .font_lg{
+    font-size: 18px ;
+    font-weight: 700
+  }
+  .font_sm{
+    font-size: 12px ;
+    font-weight: 400
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    .mt-sec2-partb-mob{
+      margin-top: 200px;
+    }
+  }
+}

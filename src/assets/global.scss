@@ -1,0 +1,151 @@
+//@import './base.css';
+@font-face {
+  font-family: iranyekanwebblack;
+  font-style: normal;
+  src: url('./font/FontStyle/iranyekanwebregularfanum.ttf');
+  /* src: url('../style/font/FontStyle/iranyekanwebboldfanum.ttf'); */
+}
+@font-face {
+  font-family: iranyekanBold;
+  font-style: normal;
+  src: url('./font/FontStyle/iranyekanwebboldfanum.ttf');
+}
+@font-face {
+  font-family: iranyekanlight;
+  font-style: normal;
+  src: url('./font/FontStyle/iranyekanweblightfanum.ttf');
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/* ******************************************** Global Style */
+
+html, body{
+  margin: 0;
+  direction: rtl;
+  padding: 0;
+}
+body{
+  padding-top: 30px;
+  background-color: #F4FAFF;
+  /* background-color: blue; */
+  font-family: iranyekanwebblack;
+  background-image: url("./img/body img/1.svg") ,url("./img/body img/2.svg") ,url("./img/body img/3.svg") ,url("./img/body img/4.svg") ,url("./img/body img/5.svg")  ;
+  background-repeat: no-repeat;
+  background-position: center 354px, left 1593px ,right 1678px, left 3048px, left 4364px;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor_pointer{
+  cursor: pointer;
+}
+.mt-60{
+  margin-top: 60px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+
+.trn3{
+  transition: 0.3s;
+}
+.w-90{
+  width: 90%;
+}
+p{
+  margin: 0;
+}
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: left;
+}
+.text-justify{
+  text-align: justify;
+}
+
+/* ******************************************** c + bg */
+.bg_Saffron{
+  background-color: #F7C737
+}
+.bg_TuftsBlue{
+  background-color: #4A95E3
+}
+
+
+/* ******************************************** Font */
+.manualFontsize{
+  font-size:  15px
+}
+
+.manualFontsizeMini{
+  font-size:  13px
+}
+
+
+
+
+
+.gap10{
+  gap: 10px;
+}
+.gap15{
+  gap: 15px;
+}
+
+
+
+
+
+/***************************** btn bootstrap style Overwrite*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.form-control::placeholder {
+  color: #a6b8ba !important;
+}
+
+.form-control{
+  background: #FFFFFF;
+  box-shadow: 5px 8px 30px -15px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  color:black;
+  border: 0;
+  border-radius: 4px!important;
+  height: 45px
+
+}
+.form-control:focus{
+  color:black;
+  box-shadow:unset;
+  background: #FFFFFF;
+}
+
+/* ******************************************** Footer */
+
+
+
+/* ******************************************** Media */
+@media only screen and (max-width: 750px) {}
+
+@media only screen and (max-width: 950px) {}
+
+@media only screen and (max-width: 991px) {}
+
+
+
