@@ -8,9 +8,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './assets/global.scss';
 import './../tsconfig.json';
-import App from './App'
 import './index.css'
+import App from "./App.jsx";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />
+ReactDOM.createRoot(document.getElementById("root")).render(
+        <App/>
 )

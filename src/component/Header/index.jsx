@@ -1,6 +1,7 @@
-import {ImgLogo , SearchIcon , ShopIcon ,CallIcon , CTScanner , Catheter , HospitalGown , HospitalWheelBed , Stethoscope} from "../../../assets/img";
+import {ImgLogo , SearchIcon , ShopIcon ,CallIcon , CTScanner , Catheter , HospitalGown , HospitalWheelBed , Stethoscope} from "../../assets/img/index.js";
 import "./style.scss"
-import Swiper from "src/component/helper/Swiper/Swiper";
+import {Link } from "react-router-dom";
+import Swiper from "src/component/helper/Swiper/Swiper.jsx";
 
 const Index = ()=>{
 
@@ -56,51 +57,20 @@ const Index = ()=>{
             key:9
         },
     ]
-    let dataCategory=[
-        {
-            text:"دستگاه های پزشکی",
-            img:`${CTScanner}`,
-            href:"#",
-            key:0
-        },
-        {
-            text:"تجهیزات اتاق عمل",
-            img:`${Catheter}`,
-            href:"#",
-            key:1
-        },
-        {
-            text:"روپوش های پزشکی",
-            img:`${HospitalGown}`,
-            href:"#",
-            key:2
-        },
-        {
-            text:"تخت های بیمارستانی",
-            img:`${HospitalWheelBed}`,
-            href:"#",
-            key:3
-        },
-        {
-            text:"ابزار پزشکی",
-            img:`${Stethoscope}`,
-            href:"#",
-            key:4
-        },
-    ]
+
 
     return<>
 
         <div className="header">
             <div className="navbar">
                 <div className="iconLogo" style={{zIndex:"4"}}>
-                    <img src={ImgLogo} width="100%" height="100%" alt="icon"/>
+                    <a href="/#"><img src={ImgLogo} width="100%" height="100%" alt="icon"/></a>
                 </div>
                 <div className="input-group flex-nowrap position-relative input_search input_desktop">
                     <div className="position-absolute iconInput" style={{zIndex:"6"}}>
                         <img src={SearchIcon} width="100%" height="100%" alt="icon"/>
                     </div>
-                    <input type="text" className="form-control inputCustom"
+                    <input type="text" className="form-control inputCustomHeader"
                            placeholder="نام محصول یا برند مورد نظرتان را وارد نمایید!" aria-label="numberpeopel"
                            aria-describedby="addon-wrapping" name="numberpeopel"/>
                 </div>
@@ -147,7 +117,7 @@ const Index = ()=>{
                 <div className="position-absolute iconInput" style={{zIndex:"4"}}>
                     <img src={SearchIcon} width="100%" height="100%" alt="icon"/>
                 </div>
-                <input type="text" className="form-control inputCustom" placeholder="نام محصول یا برند مورد نظرتان را وارد نمایید!" aria-label="numberpeopel" aria-describedby="addon-wrapping" name="numberpeopel"/>
+                <input type="text" className="form-control inputCustomHeader" placeholder="نام محصول یا برند مورد نظرتان را وارد نمایید!" aria-label="numberpeopel" aria-describedby="addon-wrapping" name="numberpeopel"/>
             </div>
             <nav className="navbar navbar-expand-xl bg-white rounded nav-canvas   nav_mobile_items ">
                 <div className="w-100 p-0 ">
@@ -184,14 +154,14 @@ const Index = ()=>{
                             </div>
                             <ul className="w-100 d-lg-flex justify-content-between navbar-nav p-0">
                                 {dataMenu.map((items)=><li className="nav-item" key={items.key}>
-                                    <a className="nav-link box_menu_items" aria-current="page" href="#" >{items.text}</a>
+                                    <a className="nav-link box_menu_items" aria-current="page" href="/#" >{items.text}</a>
                                 </li>)}
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
-            <Swiper data_swipe1={dataCategory} typeCmp="sec_header"/>
+
         </div>
 
     </>

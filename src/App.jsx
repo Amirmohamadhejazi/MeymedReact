@@ -1,11 +1,32 @@
-import { useState } from 'react'
 import Home from "./component/home/index.jsx";
+import Header from "src/component/Header";
+import FooterPage from "src/component/footer";
+import {error404} from "src/assets/img/index.js";
+import {
+    createBrowserRouter,
+    RouterProvider,
+
+} from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home/>,
+    },
+    {
+        path: "*",
+        element: <>
+            <img src={error404} alt=""/>
+        </>,
+    },
+]);
 
   return (
     <div className="d-flex justify-content-center flex-column bg_White trn3 container ">
-        <Home/>
+        <Header/>
+        <RouterProvider router={router} />
+        <FooterPage/>
     </div>
   )
 }

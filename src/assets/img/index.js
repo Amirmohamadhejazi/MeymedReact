@@ -72,8 +72,9 @@ import certificate_icon2 from "src/assets/img/icon/certificate_icon2.svg"
 import icon_Arrow_right from "src/assets/img/icon/right.svg"
 import icon_Arrow_left from "src/assets/img/icon/left.svg"
 import sec5Logo from "src/assets/img/icon/sec5Logo.svg"
+import error404 from "src/assets/img/body img/404 Error.svg"
 
 export {ImgLogo , SearchIcon , ShopIcon ,CallIcon , CTScanner , Catheter , HospitalGown , HospitalWheelBed , Stethoscope , img1Sec2 , img2Sec2 , img3Sec2 , img4Sec2 , img5Sec2 , img6Sec2 ,img7Sec2 , img8Sec2 , img9Sec2 , img10Sec2 , imgSec1hospital , img1Sec1 , img1Sec1Active ,
     img2Sec1 , img5Sec1 , img4Sec1 , img2Sec1Active , img3Sec1 , img3Sec1Active, img4Sec1Active , img5Sec1Active , Sec2img11 , Sec2img10 ,Sec2img1 , Sec2img2 , Sec2img3, Sec2img4 , Sec2img5 , Sec2img6 , Sec2img7 , Sec2img8 , Sec2img9 , Sec2img12 , Sec2img13 , Sec2img14 , Sec2img15,
-    heartImg , Sec3icon_shampo , Sec3icon_mask , sec4img1 , sec4img2 , sec4img3 , sec4img4 , sec4img5 , sec4img6 , sec7icon1 , sec7icon2 , sec7icon3 , sec7icon4, sec7_icon_top , iconSec8 , certificate_icon1 , certificate_icon2 , icon_Arrow_left , icon_Arrow_right , sec5Logo
+    heartImg , Sec3icon_shampo , Sec3icon_mask , sec4img1 , sec4img2 , sec4img3 , sec4img4 , sec4img5 , sec4img6 , sec7icon1 , sec7icon2 , sec7icon3 , sec7icon4, sec7_icon_top , iconSec8 , certificate_icon1 , certificate_icon2 , icon_Arrow_left , icon_Arrow_right , sec5Logo , error404
 }

@@ -1,5 +1,5 @@
 import "./style.scss"
-import {ImgLogo , certificate_icon1 , certificate_icon2} from "src/assets/img";
+import {ImgLogo , certificate_icon1 , certificate_icon2} from "src/assets/img/index.js";
 import { FaTelegramPlane } from 'react-icons/fa';
 import {  SiAparat  } from 'react-icons/si';
 import {  AiFillInstagram } from 'react-icons/ai';
