@@ -6,15 +6,20 @@ const Section5 = () => {
     const [timer , SetTimer] = useState({d:0 ,h:0 ,m:0 ,s:0 })
 
     useEffect(()=>{
-        let countDownDate = new Date("April 20, 2023 15:37:25").getTime();
+        let countDownDate = new Date("April 10, 2023 15:37:25").getTime();
         setInterval(()=> {
             let now = new Date().getTime();
             let distance = countDownDate - now;
-            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            SetTimer({d:days ,h:hours ,m:minutes ,s:seconds })
+            if (distance <= 0){
+                SetTimer({d:0 ,h:0 ,m:0 ,s:0 })
+            }else {
+                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                SetTimer({d:days ,h:hours ,m:minutes ,s:seconds })
+            }
+
         }, 1000);
     },[])
     return <div className="sec5">
@@ -38,7 +43,6 @@ const Section5 = () => {
                                     <span className="value_detail">{timer.h}</span>
                                 </div>
                                 <div className="d-flex flex-column">
-
                                     <span className="title_detail">روز</span>
                                     <span className="value_detail">{timer.d}</span>
                                 </div>
