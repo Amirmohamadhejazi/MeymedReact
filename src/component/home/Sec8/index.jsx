@@ -1,6 +1,6 @@
 import "./style.scss"
 import Collapse from "src/component/helper/collapse/Collapse.jsx";
-import {iconSec8} from "src/assets/img/index.js";
+import {iconSec8} from "src/assets/img";
 
 const Section8 = () => {
     let items_clp=[

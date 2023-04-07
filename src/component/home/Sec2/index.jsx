@@ -1,5 +1,5 @@
 import "./style.scss"
-import {Sec2img1 ,Sec2img2 ,Sec2img3,Sec2img4 ,Sec2img5 ,Sec2img6 ,Sec2img7 ,Sec2img8 ,Sec2img9 ,Sec2img10 ,Sec2img11 ,Sec2img12 ,Sec2img13 ,Sec2img14 ,Sec2img15 , } from "src/assets/img/index.js";
+import {Sec2img1 ,Sec2img2 ,Sec2img3,Sec2img4 ,Sec2img5 ,Sec2img6 ,Sec2img7 ,Sec2img8 ,Sec2img9 ,Sec2img10 ,Sec2img11 ,Sec2img12 ,Sec2img13 ,Sec2img14 ,Sec2img15 , } from "src/assets/img";
 import CardItemsShop from "src/component/helper/cardItemsShop/cardItemsShop.jsx";
 import { v4 as uuidv4 } from 'uuid';
 import {useEffect, useState} from "react";

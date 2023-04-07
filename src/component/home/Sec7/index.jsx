@@ -1,5 +1,5 @@
 import "./style.scss"
-import {sec7icon1 , sec7icon2 , sec7icon3 , sec7icon4 , sec7_icon_top} from "src/assets/img/index.js";
+import {sec7icon1 , sec7icon2 , sec7icon3 , sec7icon4 , sec7_icon_top} from "src/assets/img";
 const Section7 = () => {
 
   let items_sec7 = [

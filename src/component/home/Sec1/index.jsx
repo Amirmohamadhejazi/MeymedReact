@@ -1,4 +1,4 @@
-import {imgSec1hospital ,img5Sec1 , img5Sec1Active, img4Sec1 , img4Sec1Active,img3Sec1 , img3Sec1Active, img2Sec1 , img2Sec1Active , img1Sec1 , img1Sec1Active } from "src/assets/img/index.js";
+import {imgSec1hospital ,img5Sec1 , img5Sec1Active, img4Sec1 , img4Sec1Active,img3Sec1 , img3Sec1Active, img2Sec1 , img2Sec1Active , img1Sec1 , img1Sec1Active } from "src/assets/img";
 import "./style.scss"
 import {useState} from "react";
 import Swiper from "src/component/helper/Swiper/Swiper";

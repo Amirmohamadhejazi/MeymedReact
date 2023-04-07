@@ -1,5 +1,4 @@
 import "./style.scss"
-import {heartImg} from "src/assets/img/index.js";
 import { HiHeart } from 'react-icons/hi';
 import {useState} from "react";
 

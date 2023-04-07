@@ -1,5 +1,5 @@
 import "./style.scss"
-
+import {ImgLogo , certificate_icon1 , certificate_icon2} from "src/assets/img";
 import { FaTelegramPlane } from 'react-icons/fa';
 import {  SiAparat  } from 'react-icons/si';
 import {  AiFillInstagram } from 'react-icons/ai';
@@ -11,7 +11,7 @@ const FooterPage = () => {
     <div className="box_footer">
       <div className="box_top_footer1">
         <div className=" iconLogo" style={{zIndex: "4"}}>
-          <img src="src/assets/logo.svg" width="100%" height="100%" alt="icon" />
+          <img src={ImgLogo} width="100%" height="100%" alt="icon" />
         </div>
         <span className="text_title_top_footer">فروشگاه اینترنتی تجهیزات پزشکی و بیمارستانی می مد</span>
         <span className="text_desc_top_footer">با ایجاد دسترسی عمومی آسان به ابزار و تجهیزات پزشکی با کیفیت که مورد تایید اداره کل تجهیزات پزشکی ایران نیز می باشند، با تعداد زیادی از تولیدکنندگان و واردکنندگان معتبر کالاهای پزشکی همکاری کرده و طیف گسترده ای از محصولات و ابزارآلات پزشکی را به صورت مستقیم و بدون واسطه، با قیمتی مناسب در فروشگاه آنلاین خود عرضه می کند. فروشگاه اینترنتی تجهیزات پزشکی می مد، مجموعه ای از تجهیزات اتاق عمل، تجهیزات آزمایشگاهی، ابزار جراحی، تجهیزات هتلینگ بیمارستانی، تجهیزات پزشکی عمومی و خانگی، دستگاه های استریلیزاسون و لندری بیمارستانی، تجهیزات تخصصی زنان و زایمان، دستگاه ها و تجهیزات تصویربرداری پزشکی، محصولات فیزیوتراپی، توانبخشی و کاردرمانی، لوازم مصرفی پزشکی و بیمارستانی را در یک فروشگاه آنلاین گرد هم آورده تا خریدار با مشاهده ی کالای پزشکی مورد نیاز خود، اطلاعات لازم در رابطه با کالا (شامل قیمت، توضیحات کلی و مشخصات فنی کالا، کشور تولید کننده و رزومه ی برند مورد نظر و همچنین عکس و ویدیوی کالای پزشکی و مراقبتی) را دریافت و با مقایسه ی آن در بازار رقابتی حاضر، راحتی و اطمینان در خرید تجهیزات پزشکی بیمارستانی و آزمایشگاهی را با ما تجربه کند.</span>
@@ -78,8 +78,8 @@ const FooterPage = () => {
 
             <div className="d-flex flex-center  mt-lg-0 mt-2">
               <div className="d-flex flex-row col-6 col-lg-12 justify-content-between">
-                <div className="box_Certificate cursor_pointer"><img src="src/assets/img/icon/certificate_icon1.svg" alt=""/></div>
-                <div className="box_Certificate cursor_pointer"><img src="src/assets/img/icon/certificate_icon2.svg" alt=""/></div>
+                <div className="box_Certificate cursor_pointer"><img src={certificate_icon1} alt=""/></div>
+                <div className="box_Certificate cursor_pointer"><img src={certificate_icon2} alt=""/></div>
               </div>
             </div>
 

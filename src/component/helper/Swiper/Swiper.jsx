@@ -2,6 +2,7 @@
 import {Navigation, Pagination, Scrollbar, A11y, Thumbs} from 'swiper';
 import { Swiper, SwiperSlide , useSwiper } from 'swiper/react';
 import CardItemsShop from "src/component/helper/cardItemsShop/cardItemsShop.jsx";
+import {icon_Arrow_right , icon_Arrow_left} from "../../../assets/img";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -216,8 +217,8 @@ const SwiperHelper = ({
                                         <div className="d-flex flex-column align-items-center">
                                             <span className="text_title_swiper">جدیدترین محصولات</span>
                                             <div className="d-flex flex-row my-3 gap-3">
-                                                <SwiperButtonNext><img src="src/assets/img/icon/right.svg" className="icon_R_L" alt=""/></SwiperButtonNext>
-                                                <SwiperButtonPrev><img src="src/assets/img/icon/left.svg" className="icon_R_L" alt=""/></SwiperButtonPrev>
+                                                <SwiperButtonNext><img src={icon_Arrow_right} className="icon_R_L" alt=""/></SwiperButtonNext>
+                                                <SwiperButtonPrev><img src={icon_Arrow_left} className="icon_R_L" alt=""/></SwiperButtonPrev>
                                             </div>
                                         </div>
                                         {data_swipe4.map((items , index)=> <SwiperSlide key={index} >
@@ -234,8 +235,8 @@ const SwiperHelper = ({
                                             <div className="d-flex flex-column align-items-center">
                                                 <span className="text_title_swiper">جدیدترین محصولات</span>
                                                 <div className="d-flex flex-row my-3 gap-3">
-                                                    <SwiperButtonNext><img src="src/assets/img/icon/right.svg" className="icon_R_L" alt=""/></SwiperButtonNext>
-                                                    <SwiperButtonPrev><img src="src/assets/img/icon/left.svg" className="icon_R_L" alt=""/></SwiperButtonPrev>
+                                                    <SwiperButtonNext><img src={icon_Arrow_right} className="icon_R_L" alt=""/></SwiperButtonNext>
+                                                    <SwiperButtonPrev><img src={icon_Arrow_left} className="icon_R_L" alt=""/></SwiperButtonPrev>
                                                 </div>
 
                                                 <div className="d-flex flex-column text-center mt-2 mb-4 text_description_swiper">

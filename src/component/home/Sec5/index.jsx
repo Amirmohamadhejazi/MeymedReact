@@ -1,4 +1,5 @@
 import "./style.scss"
+import {sec5Logo} from "src/assets/img";
 import {useEffect, useState} from "react";
 const Section5 = () => {
 
@@ -58,7 +59,7 @@ const Section5 = () => {
                                 <span>بیش از 30 درصد تخفیف</span>
                                 <span> برای محصولات برند رزمکس</span>
                             </div>
-                            <div><img src="src/assets/img/icon/sec5Logo.svg" alt="" /></div>
+                            <div><img src={sec5Logo} alt="" /></div>
                         </div>
                         <div
                             className="w-100 d-flex flex-column text-desc-sec5 my-lg-3 align-items-center align-items-lg-start  my-3 my-lg-0">

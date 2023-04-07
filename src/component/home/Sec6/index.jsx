@@ -1,6 +1,6 @@
 import "./style.scss"
 import Swiper from "src/component/helper/Swiper/Swiper";
-import {sec4img1, sec4img2, sec4img3, sec4img4, sec4img5, sec4img6} from "src/assets/img/index.js";
+import {sec4img1, sec4img2, sec4img3, sec4img4, sec4img5, sec4img6} from "src/assets/img";
 
 const Section6 = ()=>{
     let itemsSwipe2= [

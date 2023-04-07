@@ -1,6 +1,6 @@
 import "./style.scss"
 
-import {Sec3icon_shampo , Sec3icon_mask} from "src/assets/img/index.js";
+import {Sec3icon_shampo , Sec3icon_mask} from "src/assets/img";
 const Section3 = ()=>{
     return <div className="sec3">
 
