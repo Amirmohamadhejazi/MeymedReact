@@ -1,10 +1,12 @@
-import Header from "./Header/Header.jsx";
-import Section1 from "src/component/home/Sec1/Section1.jsx";
+import Header from "./Header";
+import Sec1 from "src/component/home/Sec1";
+import Sec2 from "src/component/home/Sec2";
 
 const Home = () => {
   return <>
     <Header/>
-    <Section1/>
+    <Sec1/>
+    <Sec2/>
   </>
 }
 

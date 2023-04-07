@@ -4,7 +4,7 @@ import {useState} from "react";
 import Swiper from "src/component/helper/Swiper/Swiper";
 
 
-const Section1 = () => {
+const Index = () => {
 
     const [number_option , SetNumber_option] = useState(0)
     const [formData , SetFormData] = useState({
@@ -101,4 +101,4 @@ const Section1 = () => {
   </div>
 }
 
-export default Section1
+export default Index

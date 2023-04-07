@@ -2,18 +2,18 @@
 @font-face {
   font-family: iranyekanwebblack;
   font-style: normal;
-  src: url('./font/FontStyle/iranyekanwebregularfanum.ttf');
+  src: url('../assets/font/FontStyle/iranyekanwebregularfanum.ttf');
   /* src: url('../style/font/FontStyle/iranyekanwebboldfanum.ttf'); */
 }
 @font-face {
   font-family: iranyekanBold;
   font-style: normal;
-  src: url('./font/FontStyle/iranyekanwebboldfanum.ttf');
+  src: url('../assets/font/FontStyle/iranyekanwebboldfanum.ttf');
 }
 @font-face {
   font-family: iranyekanlight;
   font-style: normal;
-  src: url('./font/FontStyle/iranyekanweblightfanum.ttf');
+  src: url('../assets/font/FontStyle/iranyekanweblightfanum.ttf');
 }
 .selector-for-some-widget {
   box-sizing: content-box;
@@ -25,13 +25,35 @@ html, body{
   margin: 0;
   direction: rtl;
   padding: 0;
+  scroll-behavior: smooth;
 }
+
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+}
+
+/* For the scroll thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd; /* Color of the thumb */
+}
+
+/* For the scroll track */
+::-webkit-scrollbar-track {
+  background-color: white; /* Color of the track */
+}
+
+/* For the scroll corner */
+::-webkit-scrollbar-corner {
+  background-color: #bdbdbd; /* Color of the corner */
+}
+
 body{
   padding-top: 30px;
   background-color: #F4FAFF;
   /* background-color: blue; */
   font-family: iranyekanwebblack;
-  background-image: url("./img/body img/1.svg") ,url("./img/body img/2.svg") ,url("./img/body img/3.svg") ,url("./img/body img/4.svg") ,url("./img/body img/5.svg")  ;
+  background-image: url("/src/assets/img/body img/1.svg") ,url("/src/assets/img/body img/2.svg") ,url("/src/assets/img/body img/3.svg") ,url("/src/assets/img/body img/4.svg") ,url("/src/assets/img/body img/5.svg")  ;
   background-repeat: no-repeat;
   background-position: center 354px, left 1593px ,right 1678px, left 3048px, left 4364px;
 }

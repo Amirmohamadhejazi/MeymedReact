@@ -2,7 +2,7 @@ import {ImgLogo , SearchIcon , ShopIcon ,CallIcon , CTScanner , Catheter , Hospi
 import "./style.scss"
 import Swiper from "src/component/helper/Swiper/Swiper";
 
-const Header = ()=>{
+const Index = ()=>{
 
    let dataMenu =[
         {
@@ -197,4 +197,4 @@ const Header = ()=>{
     </>
 }
 
-export default Header
+export default Index

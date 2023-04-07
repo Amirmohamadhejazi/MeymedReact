@@ -2,6 +2,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import CardItemsShop from "src/component/helper/cardItemsShop/cardItemsShop.jsx";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,11 +15,10 @@ import {img1Sec2 , img2Sec2 , img3Sec2 , img4Sec2 , img5Sec2 , img6Sec2 ,img7Sec
 
 const SwiperHelper = ({
                           typeCmp , data_swipe1 ,
-                          data_swipe_sec1 , number_option_sec1 , changeTabSec1
+                          data_swipe_sec1 , number_option_sec1 , changeTabSec1,
+                          data_swipe2 , SwiperHandleClick ,currentCategory , data_swipe3
 
 }) => {
-
-    console.log(data_swipe_sec1 , number_option_sec1 , changeTabSec1)
 
     let breakSwiper1 = {
         360: {
@@ -57,6 +57,43 @@ const SwiperHelper = ({
             slidesPerView: 5,
         }
     }
+    let breakSwiper3 = {
+        360: {
+            slidesPerView: 1,
+        },
+        577: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+        1400:{
+            slidesPerView: 5,
+        }
+    }
+    let breakSwiper4 = {
+        360: {
+            slidesPerView: 1,
+        },
+        577: {
+            slidesPerView: 1.5,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    }
     return<>
         <div className="w-100 flex-center" >
 
@@ -64,11 +101,10 @@ const SwiperHelper = ({
                 typeCmp === 'sec_header' ?  <div className="box_category flex-wrap">
                         <Swiper
                             breakpoints={breakSwiper1}
-                            className="w-100 " style={{height:"300px"}}
+                            className="w-100 mb-5"
                              spaceBetween={20}
                             freeMode={true}
                         >
-
                             {data_swipe1.map((items)=> <SwiperSlide key={items.key}>
                                 <div className="items_category mt-2">
                                     <div className="img_category">
@@ -76,11 +112,9 @@ const SwiperHelper = ({
                                     </div>
                                     <span>{items.text}</span>
                                 </div>
-
                             </SwiperSlide>)}
                         </Swiper>
                 </div>
-
                     : typeCmp === "sec_1" ?<Swiper
 
                         breakpoints={breakSwiper2}
@@ -96,7 +130,29 @@ const SwiperHelper = ({
                             </div>
 
                         </SwiperSlide>)}
-                    </Swiper>  :""
+                    </Swiper>  : typeCmp === "sec_2_nav" ?<Swiper
+                        className="w-100"
+                            breakpoints={breakSwiper3}
+                            freeMode={true}
+                        >
+                            {data_swipe2.map((items)=> <SwiperSlide key={items.id} >
+
+                                <div className={`cursor_pointer items_sec_2_nav ${items.category === currentCategory && 'items_sec_2_nav_Active'}`} key={items.key}  onClick={(e)=>SwiperHandleClick(items.category)}>
+                                    <span className="mt-2 ">{ items.text }</span>
+                                </div>
+                            </SwiperSlide>)}
+                        </Swiper>
+                :  typeCmp === "sec_2_content" ?  <Swiper
+                                className="w-100"
+                                breakpoints={breakSwiper4}
+                                freeMode={true}
+                            >
+                                {data_swipe3.map((items , index)=> <SwiperSlide key={index} >
+                                    <CardItemsShop dataCard={items}/>
+                                </SwiperSlide>)}
+                            </Swiper>
+
+                            :""
             }
 
         </div>
