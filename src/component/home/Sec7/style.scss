@@ -1,0 +1,26 @@
+.sec7{
+  .box_content_sec7{
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    background: #73B1F2;
+    border-radius: 15px;
+    color: white;
+  }
+  .text_top_sec7{
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+  .border_left_box_content_items{
+    border-left: 1px solid #98C6F5
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    .border_left_box_content_items{
+      border-left:0
+    }
+  }
+
+}

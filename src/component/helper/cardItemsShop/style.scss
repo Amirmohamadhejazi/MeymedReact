@@ -1,5 +1,6 @@
 .cardShop {
   .box_items {
+    cursor: pointer;
     margin-top: 20px;
     position: relative;
     padding: 30px;
@@ -61,11 +62,16 @@
     cursor: pointer;
     color: white;
     font-size: 30px;
+    transition:0.3s ;
+    :hover{
+      color: red;
+      transition:0.3s ;
+    }
   }
 
-  .heartActive{
-    color: red;
-    opacity: 1;
-  }
+  //.heartActive{
+  //  color: red;
+  //  opacity: 1;
+  //}
 
 }

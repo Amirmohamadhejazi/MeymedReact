@@ -35,10 +35,9 @@ const CardItemsShop = ({dataCard})=>{
                                     <span className="text_old_price mx-1">{separateNumber(dataCard.price)}</span>
                                 </>
                             }
-
                             <span>تومان</span>
                         </div>
-                        <span className="text_price">{dataCard.percentage ? separateNumber(Math.round(dataCard.price - dataCard.price / 100 * dataCard.percentage)) : separateNumber(dataCard.price)}</span>
+                        <span className="text_price">{dataCard.percentage ? separateNumber(Math.round(dataCard.price - dataCard.price / 100 * dataCard.percentage)) : separateNumber(dataCard.price)} تومان</span>
                     </div>
                 }
                 {

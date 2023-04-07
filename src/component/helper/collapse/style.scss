@@ -1,0 +1,57 @@
+.collapseHelper{
+  .box_clp{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .icon_clp_box {
+    position: absolute;
+    left: 2%;
+    font-size: 30px;
+    background: #DEEFF5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .icon_clp  {
+    transition: 0.3s;
+  }
+
+
+  .rotate {
+    transform-origin: center;
+    transform: rotate(45deg);
+
+  }
+
+  .clp_cmp{
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 30px -15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: #374957;
+  }
+
+  .text_index{
+    font-size: 36px;
+    text-align: center;
+    color: #ECECEC;
+  }
+  .text-title{
+    font-weight: 400;
+    font-size: clamp(13px , 1rem , 1vw);
+    color: #000000;
+
+  }
+}

@@ -7,8 +7,8 @@ import Swiper from "src/component/helper/Swiper/Swiper";
 
 const Index = ()=>{
 
-    const [width_desc , SetWidth_desc] = useState(undefined)
-    const [currentCategory , SetCurrentCategory] = useState("category1")
+    const [width_desc , SetWidth_desc] = useState(true)
+    const [currentCategory , SetCurrentCategory] = useState("category5")
     const [filteredItems , SetFilteredItems] = useState([])
     let itemsNav=[
         {text:"دستگاه های پزشکی ",
@@ -192,13 +192,13 @@ const Index = ()=>{
             </div>
             <div className="menu_inner_b col-11 col-lg-10"/>
         </div>
-        <div className="w-100 flex-center">
+        <div className="w-100 flex-center mb-5">
             {
                 width_desc ? <div className={`w-100 d-flex ${filteredItems.length <= 2 ? 'justify-content-start' : 'justify-content-center'} align-items-center flex-wrap  sec2-content-des `}>
                     {filteredItems.map((items )=> <CardItemsShop  dataCard={items} key={items.id} />)}
                 </div> : <Swiper typeCmp="sec_2_content" data_swipe3={filteredItems} />
             }
-    </div>
+        </div>
     </div>
 }
 

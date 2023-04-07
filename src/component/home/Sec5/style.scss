@@ -1,0 +1,84 @@
+.sec5{
+  .box_content_sec5{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .box_items1 , .box_items2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 20rem;
+    padding: 30px;
+    justify-content: center;
+  }
+  .box_items1{
+    background: url('src/assets/img/icon/sec5icon2.svg'), #9FC1E5;
+    background-repeat: no-repeat;
+    background-position:right;
+  }
+  .box_items2{
+    background: url('src/assets/img/icon/sec5icon1.svg'), #FFFFFF;
+    background-repeat: no-repeat;
+    background-position:left bottom;
+  }
+
+
+  .btn_box_items{
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .box_items1 .btn_box_items{
+    background: #FFFFFF;
+    color: #84A6CA;
+  }
+  .box_items2 .btn_box_items{
+    background: #4A95E3;
+    color: #FFFFFF;
+  }
+
+
+  .box_items1 .text-title-sec5{
+    font-weight: 800;
+    font-size: 36px;
+    color: #FFFFFF;
+  }
+  .box_items2 .text-title-sec5{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+    color: #000000;
+  }
+
+
+  .box_items1 .text-desc-sec5{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 90%;
+  }
+  .box_items2 .text-desc-sec5{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #000000;
+  }
+
+  .title_detail{
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .value_detail{
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

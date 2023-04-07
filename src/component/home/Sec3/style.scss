@@ -1,0 +1,53 @@
+.sec3{
+  .content_box_sec3{
+    margin-top: 30px;
+    width: 100%;
+    color: black;
+    font-size: 28px;
+  }
+  .box1, .box2{
+    min-height: 320px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    font-size: 28px;
+  }
+  .box1{
+    background: url('src/assets/img/icon/sec3bg2.svg'), #C1E0FF;
+    background-repeat: no-repeat;
+    background-position:left 0 ;
+  }
+  .box2{
+    background: url('src/assets/img/icon/sec3bg1.svg'), rgba(247, 199, 55, 0.4);
+    background-repeat: no-repeat;
+    background-position:left 32px ;
+  }
+  .box_btn{
+    cursor: pointer;
+    width: 140px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .box2 .box_btn {
+    background: #F7C737;
+
+  }
+  .box1 .box_btn {
+    background: #4A95E3;
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    .box1, .box2{
+      font-size: 20px;
+    }
+  }
+}
