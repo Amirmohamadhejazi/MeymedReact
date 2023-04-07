@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <Home/>,
     },
     {
-        path: "*",
+        path: "/MeymedReact/*",
         element: <>
             <img src={error404} alt=""/>
         </>,
