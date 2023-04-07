@@ -94,7 +94,6 @@ const Index = () => {
     ]
 
     function changeTab(data) {
-        console.log(data)
         SetNumber_option(data)
     }
   return <>

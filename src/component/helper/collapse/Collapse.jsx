@@ -3,21 +3,14 @@ import {useEffect, useRef, useState} from "react";
 
 
 const Collapse = ({items_collapse}) => {
-    console.log(items_collapse)
     const [show , SetShow] = useState(false)
 
     function toggleCollapse(index) {
-        console.log(index)
         SetShow(index)
         if (index === show){
             SetShow(false)
         }else {SetShow(index)}
     }
-
-    useEffect(()=>{
-        console.log(show)
-
-    },[show])
 
 
   return <div className="collapseHelper">
