@@ -64,7 +64,7 @@ const Index = ()=>{
         <div className="header">
             <div className="navbar">
                 <div className="iconLogo" style={{zIndex:"4"}}>
-                    <a href="/#"><img src={ImgLogo} width="100%" height="100%" alt="icon"/></a>
+                    <a href="#"><img src={ImgLogo} width="100%" height="100%" alt="icon"/></a>
                 </div>
                 <div className="input-group flex-nowrap position-relative input_search input_desktop">
                     <div className="position-absolute iconInput" style={{zIndex:"6"}}>
@@ -154,7 +154,7 @@ const Index = ()=>{
                             </div>
                             <ul className="w-100 d-lg-flex justify-content-between navbar-nav p-0">
                                 {dataMenu.map((items)=><li className="nav-item" key={items.key}>
-                                    <a className="nav-link box_menu_items" aria-current="page" href="/#" >{items.text}</a>
+                                    <a className="nav-link box_menu_items" aria-current="page" href={items.href} >{items.text}</a>
                                 </li>)}
                             </ul>
                         </div>

@@ -3,21 +3,21 @@ import {sec5Logo} from "src/assets/img";
 import {useEffect, useState} from "react";
 const Section5 = () => {
 
-    const [timer , SetTimer] = useState({d:0 ,h:0 ,m:0 ,s:0 })
+    const [timer , SetTimer] = useState({timer:false,d:0 ,h:0 ,m:0 ,s:0 })
 
     useEffect(()=>{
-        let countDownDate = new Date("April 10, 2023 15:37:25").getTime();
+        let countDownDate = new Date("April 20, 2023 11:13:00").getTime();
         setInterval(()=> {
             let now = new Date().getTime();
             let distance = countDownDate - now;
             if (distance <= 0){
-                SetTimer({d:0 ,h:0 ,m:0 ,s:0 })
+                SetTimer({timer:false,d:0 ,h:0 ,m:0 ,s:0 })
             }else {
                 let days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                SetTimer({d:days ,h:hours ,m:minutes ,s:seconds })
+                SetTimer({timer:true,d:days ,h:hours ,m:minutes ,s:seconds })
             }
 
         }, 1000);
@@ -28,9 +28,12 @@ const Section5 = () => {
                     <div className="box_items1 align-items-center text-center justify-content-lg-between">
                         <span className="text-title-sec5">پیشنهاد ویژه</span>
                         <span className=" text-desc-sec5">انواع تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای موجود در بازار با تخفیف اختصاصی ویژه فروشگاه می‌مد به مدت محدود</span>
-                        <div className="w-100 d-flex flex-column flex-lg-row justify-lg-content-between align-items-lg-end ">
-                            <div className="d-flex col-12 col-lg-6 flex-row justify-content-between">
-                                <div className="d-flex flex-column">
+                        <div className="w-100 d-flex flex-column flex-lg-row justify-lg-content-between  align-items-lg-center ">
+                            <div className=" col-12 col-lg-6 my-1 my-lg-0">
+                                {
+                                   timer.timer ? <div className="d-flex flex-row justify-content-between align-items-lg-end">
+                                   
+                                   <div className="d-flex flex-column">
                                     <span className="title_detail">ثانیه</span>
                                     <span className="value_detail">{timer.s}</span>
                                 </div>
@@ -46,6 +49,8 @@ const Section5 = () => {
                                     <span className="title_detail">روز</span>
                                     <span className="value_detail">{timer.d}</span>
                                 </div>
+                                   </div> : <div className="h-100 flex-center title_detail">پیشنهاد ویژه به اتمام رسید!</div>
+                                }
                             </div>
                             <div className="d-flex justify-content-center justify-content-lg-end col-12 col-lg-6 ">
                                 <div className="btn_box_items">
