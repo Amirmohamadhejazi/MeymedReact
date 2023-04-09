@@ -26,7 +26,7 @@ const SwiperHelper = ({
     const swiper = useSwiper();
     let breakSwiper1 = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.7,
         },
         577: {
             slidesPerView: 2,
@@ -43,7 +43,7 @@ const SwiperHelper = ({
     }
     let breakSwiper2 = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.4,
         },
         577: {
             slidesPerView: 2,
@@ -63,7 +63,7 @@ const SwiperHelper = ({
     }
     let breakSwiper3 = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.5,
         },
         577: {
             slidesPerView: 2,
@@ -83,7 +83,7 @@ const SwiperHelper = ({
     }
     let breakSwiper4 = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.1,
         },
         577: {
             slidesPerView: 1.5,
@@ -100,7 +100,7 @@ const SwiperHelper = ({
     }
     let breakSwiper5 = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.1,
         },
         577: {
             slidesPerView: 1.5,
@@ -120,7 +120,7 @@ const SwiperHelper = ({
     }
     let breakSwiper6 = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.7,
         },
         577: {
             slidesPerView: 2.5,

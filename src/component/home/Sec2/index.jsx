@@ -51,7 +51,7 @@ const Index = ()=>{
             title:"کد 823014",
             description:"تب سنج دیجیتال رز دیتا",
             price:547920,
-            percentage:10,
+            percentage:0,
             category: 'category5',
             id:uuidv4()
         },
@@ -60,7 +60,7 @@ const Index = ()=>{
             title:"کد 81774",
             description:"تب سنج دیجیتال رز دیتا",
             price:390000,
-            percentage:6,
+            percentage:0,
             category: 'category5',
             id:uuidv4()
         },
@@ -69,7 +69,7 @@ const Index = ()=>{
             title:"کد 81055",
             description:"تب سنج دیجیتال رز دیتا",
             price:390000,
-            percentage:45,
+            percentage:0,
             category: 'category5',
             id:uuidv4()
         },
@@ -78,7 +78,7 @@ const Index = ()=>{
             title:"کد 81114",
             description:"تب سنج دیجیتال رز دیتا",
             price:1221120,
-            percentage:23,
+            percentage:0,
             category: 'category5',
             id:uuidv4()
         },
@@ -87,7 +87,7 @@ const Index = ()=>{
             title:"کد 83014",
             description:"تب سنج دیجیتال رز دیتا",
             price:504873,
-            percentage:12,
+            percentage:0,
             category: 'category5',
             id:uuidv4()
         },
@@ -96,7 +96,7 @@ const Index = ()=>{
             title:"کد 81114",
             description:"تب سنج دیجیتال رز دیتا",
             price:10002000,
-            percentage:65,
+            percentage:0,
             category: 'category5',
             id:uuidv4()
         },
@@ -105,7 +105,7 @@ const Index = ()=>{
             title:"کد 12111",
             description:"تخت بیمارستانی",
             price:102000,
-            percentage:65,
+            percentage:0,
             category: 'category4',
             id:uuidv4()
         },
@@ -114,7 +114,7 @@ const Index = ()=>{
             title:"کد 1321",
             description:"تخت بیمارستانی",
             price:1020540,
-            percentage:65,
+            percentage:0,
             category: 'category4',
             id:uuidv4()
         },
@@ -123,7 +123,7 @@ const Index = ()=>{
             title:"کد 1212",
             description:"روپوش پزشکی",
             price:10002000,
-            percentage:65,
+            percentage:0,
             category: 'category3',
             id:uuidv4()
         },
@@ -132,7 +132,7 @@ const Index = ()=>{
             title:"کد 1231",
             description:"تیغ جراحی",
             price:10002000,
-            percentage:65,
+            percentage:0,
             category: 'category2',
             id:uuidv4()
         },
@@ -141,7 +141,7 @@ const Index = ()=>{
             title:"کد 1231",
             description:"تخت بیمارستانی",
             price:10002000,
-            percentage:65,
+            percentage:0,
             category: 'category4',
             id:uuidv4()
         },
@@ -150,7 +150,7 @@ const Index = ()=>{
             title:"کد 1231",
             description:"تخت بیمارستانی",
             price:10002000,
-            percentage:65,
+            percentage:0,
             category: 'category4',
             id:uuidv4()
         },
@@ -159,7 +159,7 @@ const Index = ()=>{
             title:"کد 1231",
             description:"مانیتورینگ",
             price:1502000,
-            percentage:65,
+            percentage:0,
             category: 'category1',
             id:uuidv4()
         },

@@ -5,14 +5,7 @@ import {useState} from "react";
 const CardItemsShop = ({dataCard})=>{
 
     function separateNumber( num ) {
-        let str = num.toString().split('.');
-        if (str[0].length >= 5) {
-            str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1,');
-        }
-        if (str[1] && str[1].length >= 5) {
-            str[1] = str[1].replace(/(\d{3})/g, '$1 ');
-        }
-        return str.join('.');
+        return num.toLocaleString()
     }
 
 
@@ -29,14 +22,15 @@ const CardItemsShop = ({dataCard})=>{
                     dataCard.price && <div className="d-flex flex-column align-items-end">
                         <div className="d-flex flex-row">
                             {
-                                dataCard.percentage && <>
+                                dataCard.percentage>1 && <>
                                     <span className="badge_percentage">{dataCard.percentage}%</span>
                                     <span className="text_old_price mx-1">{separateNumber(dataCard.price)}</span>
+                                     <span>تومان</span>
                                 </>
                             }
-                            <span>تومان</span>
+                           
                         </div>
-                        <span className="text_price">{dataCard.percentage ? separateNumber(Math.round(dataCard.price - dataCard.price / 100 * dataCard.percentage)) : separateNumber(dataCard.price)} تومان</span>
+                        <span className="text_price">{dataCard.percentage ? separateNumber(dataCard.price - dataCard.price / 100 * dataCard.percentage) : separateNumber(dataCard.price)} تومان</span>
                     </div>
                 }
                 {

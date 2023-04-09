@@ -130,10 +130,17 @@
       transition: 0.5s;
     }
   }
+
+
 .inputCustom{
   font-size: 14px;
   border-radius: 0 4px 4px 0 !important;
 }
+.box-input-custom{
+  border-radius:4px 0 0 4px
+}
+
+
 
 
   @media only screen and (max-width: 992px) {

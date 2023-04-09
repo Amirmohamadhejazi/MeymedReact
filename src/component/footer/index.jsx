@@ -105,7 +105,7 @@ const FooterPage = () => {
               <input type="text" className="form-control form-control-footer inputCustom"
                      placeholder="لطفا ایمیل خود را وارد کنید!" aria-label="numberpeopel"
                      aria-describedby="addon-wrapping" name="numberpeopel"/>
-              <div className="bg-white flex-center p-1">
+              <div className="bg-white box-input-custom flex-center p-1">
                 <div className=" box_on_Input cursor_pointer me-2"  >
                   عضویت
                 </div>
