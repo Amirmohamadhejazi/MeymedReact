@@ -29,9 +29,11 @@ const Section6 = ()=>{
             id:5
         },
     ]
-    return<div className="sec6">
-        <Swiper typeCmp="sec_6" data_swipe6={itemsSwipe2} />
-    </div>
+    return  <>
+        <div className="sec6">
+            <Swiper typeCmp="sec_6" data_swipe6={itemsSwipe2} />
+        </div>
+    </>
 }
 
 export default Section6

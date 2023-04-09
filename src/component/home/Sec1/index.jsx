@@ -101,9 +101,11 @@ const Index = () => {
           <Swiper data_swipe1={dataCategory} typeCmp="sec_header"/>
       </div>
       <div className="sec1">
-          <div className="content_box_sec1 flex-column flex-lg-row">
-              <div className="item_box col-12 col-lg-7  ">
-                  <div className="d-flex flex-row justify-content-between flex-wrap">
+          <div className="content_box_sec1 d-flex row gx-3 flex-wrap">
+              <div className=" col-12 col-lg-7  ">
+
+                <div className="item_box">
+                <div className="d-flex flex-row justify-content-between flex-wrap">
                       <Swiper typeCmp="sec_1" data_swipe_sec1={items_options} changeTabSec1={changeTab} number_option_sec1={number_option}/>
                   </div>
                   <div className="d-flex flex-column my-3" style={{fontSize: "10px"}}>
@@ -144,14 +146,18 @@ const Index = () => {
                           </div>
                       </div>
                   </form>
+                </div>
               </div>
-              <div className="item_box d-flex align-content-center justify-content-end text-center flex-column col-12 col-lg-4 gap10 mt-sec2-partb-mob">
+              <div className=" col-12 col-lg-5">
+              <div className="item_box h-100 d-flex align-content-center justify-content-end text-center gap10 mt-sec2-partb-mob flex-column">
                   <div className="img_detail_selected">
                       <img src={imgSec1hospital} alt=""/>
                   </div>
                   <span className="font_lg mt-5" >{items_options[number_option].text}</span>
                   <div className="w-100 d-flex justify-content-center font_sm">
                       <span className="mt-3 w-75">{items_options[number_option].text} متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد</span>
+                  </div>
+
                   </div>
               </div>
           </div>

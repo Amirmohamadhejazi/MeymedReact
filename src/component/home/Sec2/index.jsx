@@ -185,7 +185,8 @@ const Index = ()=>{
         },[1000])
     },[])
 
-    return <div className="sec2">
+    return <>
+    <div className="sec2">
         <div className="box_menu_sec2">
             <div className="menu_inner_t col-12 col-lg-11 flex-wrap">
                 <Swiper typeCmp="sec_2_nav" data_swipe2={itemsNav} SwiperHandleClick={handleClickSwiper} currentCategory={currentCategory}/>
@@ -200,6 +201,7 @@ const Index = ()=>{
             }
         </div>
     </div>
+    </>
 }
 
 export default Index

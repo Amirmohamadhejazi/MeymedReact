@@ -22,13 +22,13 @@ const router = createBrowserRouter([
     },
 ]);
 
-  return (
-    <div className="d-flex justify-content-center flex-column bg_White trn3 container ">
-        <Header/>
-        <RouterProvider router={router} />
-        <FooterPage/>
-    </div>
-  )
+  return <>
+        <div className="d-flex justify-content-center flex-column bg_White trn3 container ">
+            <Header/>
+            <RouterProvider router={router} />
+            <FooterPage/>
+        </div>
+    </>
 }
 
 export default App

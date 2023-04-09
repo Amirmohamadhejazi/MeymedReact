@@ -27,17 +27,19 @@ const Section8 = () => {
     ]
 
 
-    return <div className="sec8">
-        <span className="w-100 flex-center text_top">سوالات متداول</span>
-        <div className="box_content  d-flex flex-lg-row justify-content-lg-between flex-column   ">
-            <div className="col-12 col-lg-7  mt-2 p-2">
-                <Collapse items_collapse={items_clp}/>
-            </div>
-            <div className="col-12 col-lg-4 d-flex mt-2 p-2 align-items-start justify-content-center">
-                <img src={iconSec8} className="img_sec8" alt="s"/>
+    return <>
+        <div className="sec8">
+            <span className="w-100 flex-center text_top">سوالات متداول</span>
+            <div className="box_content  d-flex flex-lg-row justify-content-lg-between flex-column   ">
+                <div className="col-12 col-lg-7  mt-2 p-2">
+                    <Collapse items_collapse={items_clp}/>
+                </div>
+                <div className="col-12 col-lg-4 d-flex mt-2 p-2 align-items-start justify-content-center">
+                    <img src={iconSec8} className="img_sec8" alt="s"/>
+                </div>
             </div>
         </div>
-    </div>
+    </>
 }
 
 export default Section8

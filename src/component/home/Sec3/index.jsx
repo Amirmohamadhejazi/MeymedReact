@@ -2,8 +2,8 @@ import "./style.scss"
 
 import {Sec3icon_shampo , Sec3icon_mask} from "src/assets/img";
 const Section3 = ()=>{
-    return <div className="sec3">
-
+    return <>
+    <div className="sec3">
         <div className="content_box_sec3 d-flex flex-lg-row justify-content-lg-between align-items-center  flex-column ">
             <div className="box1 d-flex flex-lg-row align-items-center flex-column-reverse ">
                 <div className="col-lg-6 col-12 d-flex align-items-lg-start align-items-center flex-column pe-3 ">
@@ -29,5 +29,6 @@ const Section3 = ()=>{
             </div>
         </div>
     </div>
+    </>
 }
 export default Section3

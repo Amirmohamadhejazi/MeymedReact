@@ -106,19 +106,15 @@ const Section4 = ()=>{
         },
     ]
 
-    return <div className="sec4">
-
-        <div className="w-100 flex-center flex-column mt-5 mb-2" >
-
-            {/*<span className="text_title_swiper"  v-if="typeCmp === 'sec6'">برخی از مشتریان ما</span>*/}
-            {/*<div className="d-flex flex-column text-center text_description_swiper"  v-if="typeCmp === 'sec6'">*/}
-            {/*    <span>تامین منافع مشتری از جمله اهداف مهم در شرکت می‌مد می‌باشد </span>*/}
-            {/*    <span>و باعث افتخار ماست که توانسته‌ایم با کیفیت و توانایی‌های خود رضایت مشتریان خود را جلب کنیم.</span>*/}
-            {/*</div>*/}
-
-            <Swiper typeCmp="sec_4" data_swipe4={itemsSwipe1} />
+    return <>
+        <div className="sec4">
+            <div className="w-100 flex-center flex-column mt-5 mb-2" >
+                <Swiper typeCmp="sec_4" data_swipe4={itemsSwipe1} />
+            </div>
         </div>
-    </div>
+    </>
+    
 }
+    
 
 export default Section4

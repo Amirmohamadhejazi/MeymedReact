@@ -10,7 +10,6 @@ import Sec8 from "src/component/home/Sec8";
 // import FooterPage from "src/component/footer";
 const Home = () => {
   return <>
-    {/*<Header/>*/}
     <Sec1/>
     <Sec2/>
     <Sec3/>
@@ -19,7 +18,6 @@ const Home = () => {
     <Sec6/>
     <Sec7/>
     <Sec8/>
-    {/*<FooterPage/>*/}
   </>
 }
 export default Home
