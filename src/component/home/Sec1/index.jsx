@@ -12,14 +12,14 @@ import {
     img1Sec1Active,
     CTScanner, Catheter, HospitalGown, HospitalWheelBed, Stethoscope
 } from "src/assets/img";
+import AOS from 'aos';
 import "./style.scss"
 import {useState} from "react";
 import Swiper from "src/component/helper/Swiper/Swiper";
 
-
 const Index = () => {
-
     const [number_option , SetNumber_option] = useState(0)
+    const [showAnimation, setShowAnimation] = useState(true);
     const [formData , SetFormData] = useState({
         name: '',
         phone: '',
@@ -94,7 +94,18 @@ const Index = () => {
     ]
 
     function changeTab(data) {
-        SetNumber_option(data)
+        console.log(data)
+    if(number_option!== data){
+         SetNumber_option(data)
+         
+        setShowAnimation(false);
+        setTimeout(()=>{
+                setShowAnimation(true);
+        },1)
+        
+        AOS.refresh();
+    }
+       
     }
   return <>
       <div className="header">
@@ -108,13 +119,15 @@ const Index = () => {
                 <div className="d-flex flex-row justify-content-between flex-wrap">
                       <Swiper typeCmp="sec_1" data_swipe_sec1={items_options} changeTabSec1={changeTab} number_option_sec1={number_option}/>
                   </div>
-                  <div className="d-flex flex-column my-3" style={{fontSize: "10px"}}>
+                  {showAnimation &&
+                  <div >
+                  <div className="d-flex flex-column my-3" data-aos="fade-right" data-aos-once={true} style={{fontSize: "10px"}}>
                       {items_options[number_option].text}
                       <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
                       <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
                       <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
                   </div>
-                  <form className="d-flex flex-row justify-content-between flex-wrap " >
+                  <form className="d-flex flex-row justify-content-between flex-wrap " onSubmit={(e)=>(e.preventDefault() , console.log(e.target))}   data-aos="fade-right" data-aos-once={true} >
                       <div className="col-12 col-lg-4">
                           <div className="input-group flex-nowrap boxes_under_options ">
                               <input type="text" className="form-control inputCustom" placeholder="نام و نام خانوادگی" aria-label="name" aria-describedby="addon-wrapping" name="name"/>
@@ -146,19 +159,27 @@ const Index = () => {
                           </div>
                       </div>
                   </form>
+                  </div>
+                  }
+                  
+
+
                 </div>
               </div>
               <div className=" col-12 col-lg-5">
+              {showAnimation &&
               <div className="item_box h-100 d-flex align-content-center justify-content-end text-center gap10 mt-sec2-partb-mob flex-column">
                   <div className="img_detail_selected">
-                      <img src={imgSec1hospital} alt=""/>
+                    
+                      <img src={imgSec1hospital} data-aos="fade-right" data-aos-once={true}  alt=""/>
                   </div>
-                  <span className="font_lg mt-5" >{items_options[number_option].text}</span>
+                  <span className="font_lg mt-5"   data-aos="fade-right" data-aos-once={true}>{items_options[number_option].text}</span>
                   <div className="w-100 d-flex justify-content-center font_sm">
-                      <span className="mt-3 w-75">{items_options[number_option].text} متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد</span>
+                      <span className="mt-3 w-75"   data-aos="fade-right" data-aos-once={true}>{items_options[number_option].text} متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد</span>
                   </div>
 
                   </div>
+                }
               </div>
           </div>
       </div>

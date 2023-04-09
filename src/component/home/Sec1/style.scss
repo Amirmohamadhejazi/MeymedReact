@@ -1,13 +1,15 @@
 .sec1{
+  
   .content_box_sec1{
     display: flex;
     justify-content: space-between;
   }
   .item_box{
     color: #000000;
+    min-height: 375px;
     position: relative;
     padding: 30px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 5px 10px 30px -15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
   }
@@ -87,6 +89,17 @@
 
   input:focus{
 
+  }
+
+
+  .slide-in {
+    position: relative;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .slide-in.active {
+    left: 0;
   }
 
   @media only screen and (max-width: 992px) {
